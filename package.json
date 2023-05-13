@@ -1,7 +1,7 @@
 {
-  "name": "dashtar-admin",
+  "name": "karas-ecommerece",
   "version": "0.1.0",
-  "description": "this is Dashtar-admin built with react.js and tailwindcss",
+  "description": "this is karas-ecommerece Admin  built with react.js and tailwindcss or it can be upgrade to nextjs",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^1.8.9",
