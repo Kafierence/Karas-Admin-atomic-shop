@@ -1,12 +1,14 @@
-import { Link, Text } from '@chakra-ui/react'
+import { Link, Text, Box } from '@chakra-ui/react'
+import NextLink from 'next/link'
 import React from 'react'
 
 const LinkPrimary = ({ title, link }) => {
     return (
-        <Link href={link}>
+        <Link as={NextLink} href={link || '/'} >
             <Text
-                position={'relative'}
+                position='relative'
                 _hover={{
+                    color: "white",
                     _after: {
                         width: '100%',
                         opacity: 1,
@@ -17,7 +19,7 @@ const LinkPrimary = ({ title, link }) => {
                     content: "''",
                     height: '2px',
                     width: 0,
-                    backgroundColor: 'black',
+                    backgroundColor: '#10b981',
                     position: 'absolute',
                     bottom: '-2px',
                     right: 0,
@@ -25,7 +27,10 @@ const LinkPrimary = ({ title, link }) => {
                     transition: '.5s',
                 }}
             >
-                {title}
+                <Box color={'#10b981!important'}>
+                    {title}
+                </Box>
+
             </Text>
         </Link>
     )
