@@ -11,7 +11,7 @@ import ImageDark from "assets/img/login-office-dark.jpeg";
 import useLoginSubmit from "../hooks/useLoginSubmit";
 
 const Login = () => {
-  const {t}=useTranslation()
+  const { t } = useTranslation()
   const { onSubmit, register, handleSubmit, errors, loading } = useLoginSubmit();
 
   return (
@@ -40,18 +40,18 @@ const Login = () => {
                   <LabelArea label="Email" />
                   <InputArea
                     register={register}
-                    defaultValue="admin@gmail.com"
+                    defaultValue="tongvannam0308@gmail.com"
                     label="Email"
                     name="email"
                     type="email"
-                    placeholder="john@doe.com"
+                    placeholder="tongvannam0308@gmail.com"
                   />
                   <Error errorName={errors.email} />
                   <div className="mt-6"></div>
                   <LabelArea label="Password" />
                   <InputArea
                     register={register}
-                    defaultValue="1234567123"
+                    defaultValue="123456789"
                     label="Password"
                     name="password"
                     type="password"
@@ -60,7 +60,7 @@ const Login = () => {
                   <Error errorName={errors.password} />
 
                   <Button disabled={loading} type="submit" className="mt-4 h-12 w-full" to="/dashboard">
-                   {t("LoginTitle")}
+                    {t("LoginTitle")}
                   </Button>
                   <hr className="my-10" />
                   <button
@@ -83,7 +83,7 @@ const Login = () => {
                     className="text-sm font-medium text-green-500 dark:text-green-400 hover:underline"
                     to="/forgot-password"
                   >
-                  {t("ForgotPassword")}
+                    {t("ForgotPassword")}
                   </Link>
                 </p>
                 <p className="mt-1">
