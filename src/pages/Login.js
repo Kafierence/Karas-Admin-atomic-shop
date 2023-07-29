@@ -6,8 +6,8 @@ import { useTranslation } from "react-i18next";
 import Error from "components/form/Error";
 import LabelArea from "components/form/LabelArea";
 import InputArea from "components/form/InputArea";
-import ImageLight from "assets/img/login-office.jpeg";
-import ImageDark from "assets/img/login-office-dark.jpeg";
+import ImageLight from "assets/img/login-office.png";
+import ImageDark from "assets/img/login-office-dark.png";
 import useLoginSubmit from "../hooks/useLoginSubmit";
 
 const Login = () => {
